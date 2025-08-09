@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --orange: #FF9900;
+}
 body {
     font-family: 'Poppins', sans-serif;
     color: #2f281e;
+    width: 1400px;
+    margin: 0 auto;
 }
 header {
+    width:1440px;
     display: flex;
     padding: 24px 143px;
     margin: 0 auto;
@@ -22,12 +28,16 @@ a {
     outline: none;
     
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+}
 .logo {
     width: 187px;
     height: 32px;
     margin-right: 320px;
 }
-ul {
+.links-nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -35,6 +45,11 @@ ul {
     width: 327px;
     justify-content: space-between;
     margin-right: 52px;
+    align-items: center;
+}
+.link {
+    font-size: 14px;
+
 }
 .btn-in {
     width: 102px;
@@ -47,19 +62,22 @@ ul {
 .btn-up {
     width: 110px;
     height: 46px;
-    background-color: #FF9900;
+    background-color: var(--orange);
     color: #fff;
     border: none;
     border-radius: 4px;
+
 }
 .hero {
-    padding: 20px 129px 110px 145px;
+    padding: 30px 129px 110px 145px;
     display: flex;
+    justify-content: center;
 
 }
 .descr {
     display: flex;
     flex-direction: column;
+    margin-top: 83px;
 }
 .title {
     font-weight: 700;
@@ -76,33 +94,162 @@ ul {
 }
 .group-btn{
     display: flex;
+    align-items: center;
 }
 .btn-start {
     border-radius: 4px;
         width: 175px;
         height: 53px;
         border: none;
-        background-color: #FF9900;
+        background-color: var(--orange);
         margin: 0;
         color:#fff;
         font-weight: 700;
             font-size: 16px;
-            margin-right: 10px;
+            margin-right: 30px;
 }
 
 .btn-watch {
-    width: 191px;
-    height: 53px;
+    width: 160px;
+    height: 23px;
     background-color: #fff;
     border: none;
     font-weight: 600;
     font-size: 16px;
-    color: #FF9900;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--orange);
+    margin: 0;
+    text-align: center;
+    padding: 0;
     align-content: center;
+    text-decoration: underline;
 }
-.triagle {
-    margin-right: 8.5px;
+
+
+.feature {
+    padding: 0 145px 90px;
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    ul {
+        display: flex;
+        margin-top: 54px;
+        padding: 0;
+        gap: 45px;
+        margin-bottom: 60px;
+
+        li {
+            flex:1;
+
+            svg {
+                margin-bottom: 30px;
+            }
+            h5 {
+                font-weight: 600;
+                font-size: 22px;
+                margin-bottom: 13px;
+            }
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 162%;
+                color: #544837;
+            }
+        }
+    }
+    button {
+        display: block;
+        border-radius: 4px;
+        width: 175px;
+        height: 53px;
+        border:none;
+        color: #fff;
+        background-color: var(--orange);
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+}
+
+
+.design {
+    padding: 120px 145px 0 145px;
+    display: flex;
+    gap: 104px;
+    align-items: center;
+    .design-descr {
+        width: 486px;
+        
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            color: #544837;
+            line-height: 162%;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            color: #2f281e;
+            margin-bottom: 22px;
+        }
+        ul {
+            li {
+                margin-bottom: 25px;
+                h6 {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: #2f281e;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: #544837;
+                }
+            }
+        }
+    }
+    
+}
+
+.product {
+    padding: 101px 135px 0 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .product-descr {
+        max-width: 486px;
+    }
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #544837;
+        line-height: 162%;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        color: #2f281e;
+        margin-bottom: 22px;
+    }
+    ul {
+        margin-top: 30px;
+        li{
+            display: flex;
+            margin-bottom: 30px;
+
+            
+        }
+    }
+}
+.product-svg {
+    margin-right: 30px;
+    width: 35px;
+    height: 35px;
 }
