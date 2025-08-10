@@ -244,12 +244,129 @@ ul {
             display: flex;
             margin-bottom: 30px;
 
-            
+            .product-svg {
+                margin-right: 30px;
+                min-width: 35px;
+                min-height: 35px;
+            }
         }
     }
 }
-.product-svg {
-    margin-right: 30px;
-    width: 35px;
-    height: 35px;
+
+
+.marketers {
+    padding: 104px 145px 146px 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .marketers-descr {
+        max-width: 486px;
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 162%;
+        color: #544837;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        color: #2f281e;
+        margin-bottom: 22px;
+    }
+    ul {
+        margin-top: 30px;
+        li {
+            margin-bottom: 25px;
+            h6 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 162%;
+                color: #2f281e;
+                margin-bottom: 12px;
+            }
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 162%;
+                color: #544837;
+            }
+        }
+    }
+    }
+}
+
+footer {
+    max-width: 1109px;
+    margin: 0 auto;
+    padding: 102px 0 83px 0;
+    border-top: 1px solid rgba(188, 208, 229, 0.5);
+    
+    a {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .footer-descr {
+        display: flex;
+        justify-content: end;
+        
+        ul {
+            li{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 219%;
+                color: #544837;
+
+                a {
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 219%;
+                    color: #544837;
+                }
+            }
+        }
+            ul:first-of-type {
+                margin-right: 175px;
+            }
+        
+            ul:nth-of-type(2) {
+                margin-right: 81px;
+            }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        input {
+            width: 325px;
+            height: 48px;
+            outline: none;
+            border: 1px solid #BCD0E5;
+            border-radius: 4px;
+            padding-left: 15px;
+            margin-top: 21px;
+            margin-bottom: 21px;
+
+            input::placeholder {
+                color: #bcd0e5;
+                
+            }
+        }
+
+        button {
+            width: 131px;
+            height: 39px;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--orange);
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
 }
